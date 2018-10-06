@@ -49,7 +49,7 @@ def main():
     # plt.scatter(range(1, total_times + 1), roll1_list,s=8, c='red', alpha=0.5)
     # plt.scatter(range(1, total_times + 1), roll2_list, s=8, c='green', alpha=0.5)
     # 点数频率统计
-    plt.hist(roll_sum_list, list(range(2, 14)), edgecolor="black", color='grey', normed=1, linewidth=0.5)
+    plt.hist(roll_sum_list, bins=list(range(2, 14)), edgecolor="black", color='grey', normed=1, linewidth=0.5)
     plt.title("骰子点数概率统计")
     plt.xlabel("骰子点数")
     plt.ylabel("骰子点数概率")
